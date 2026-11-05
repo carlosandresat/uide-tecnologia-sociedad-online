@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecnología y Sociedad · Semana 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;600&family=Overpass:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="../assets/presentacion.css">
+  <script src="../assets/tema.js"></script>
+</head>
+<body data-curso="tecnologia-sociedad" data-formato="debate">
+<div class="barra-lectura">
+  <a href="../index.html">Volver al curso</a>
+  <button type="button" class="boton" data-alternar-tema>Modo oscuro</button>
+</div>
+<main class="escenario">
+
+  <section class="diapositiva portada">
+    <div class="portada-panel">
+      <span>Semana</span>
+      <span class="semana-numero">2</span>
+      <span>de 7</span>
+    </div>
+    <div class="portada-texto">
+      <p class="curso">Tecnología y Sociedad</p>
+      <h1>Cambio climático, trabajo y educación</h1>
+      <p class="objetivo">Poner a prueba ideas que «todo el mundo sabe» sobre el clima, la educación y el trabajo, con evidencia que tú mismo buscas y verificas.</p>
+      <p class="fecha">Miércoles 4 de noviembre · 19:00</p>
+      <div class="recorrido-completo"></div>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Plan de hoy</h2>
+    <ol class="plan">
+      <li data-bloque="puente">Votamos la afirmación y vemos la pista del Aprendizaje Práctico.</li>
+      <li data-bloque="caso">La IA busca evidencia a favor y en contra; verificamos un dato del clima.</li>
+      <li data-bloque="salas1">Cada uno busca y verifica una evidencia. No se graba.</li>
+      <li data-bloque="plenaria1">¿Qué evidencia resiste? De dónde sale la idea.</li>
+      <li data-bloque="salas2">El trabajo: cada sala investiga un ámbito. No se graba.</li>
+      <li data-bloque="plenaria2">¿Las máquinas se quedan con el trabajo?</li>
+      <li data-bloque="cierre">Clima, Industria 4.0 y trabajo: lo que entra el domingo.</li>
+    </ol>
+  </section>
+
+  <!-- ============ PUENTE ============ -->
+
+  <section class="diapositiva bloque" data-bloque="puente">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+    </div>
+  </section>
+
+  <section class="diapositiva pregunta">
+    <p class="nota">Vota en el Forms del chat de la reunión. Al final volvemos a votar.</p>
+    <p class="enunciado">La sabiduría convencional nos dice que la educación es el gran igualador.</p>
+    <ol class="opciones">
+      <li>De acuerdo</li>
+      <li>En desacuerdo</li>
+    </ol>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Para el Aprendizaje Práctico de este domingo</h2>
+    <p class="pista">Esta semana el cuestionario recorre los tres subtemas, pero pesa mucho la Industria 4.0: qué es, qué la distingue de las revoluciones anteriores y qué aporta cada tecnología. También entran las cifras del clima y las dos figuras del tema: los mundos laborales y el aula digital. Hoy vemos todo eso.</p>
+    <p class="nota">Una pista, no la pregunta. El cuestionario vence el domingo 8 de noviembre.</p>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Tres ideas para llevarse</h2>
+    <ul class="ideas">
+      <li data-paso="1"><span>El <mark>efecto invernadero</mark> es natural y necesario. El problema empieza cuando nuestras emisiones lo intensifican: eso es el <mark>calentamiento global</mark>.</span></li>
+      <li data-paso="2"><span>Lo que distingue a la <mark>Industria 4.0</mark> de las revoluciones anteriores es lo digital: lleva tecnologías digitales avanzadas al corazón de la producción.</span></li>
+      <li data-paso="3"><span>La idea de que la educación iguala viene del <mark>funcionalismo estructural</mark>. Hoy la ponemos a prueba con datos.</span></li>
+    </ul>
+  </section>
+
+  <!-- ============ CASO EN VIVO ============ -->
+
+  <section class="diapositiva bloque" data-bloque="caso">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>La IA busca evidencia para las dos posturas. Nosotros la verificamos.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Dos posturas</h2>
+    <div class="dos-columnas">
+      <div>
+        <h3>Postura A · Iguala</h3>
+        <p>La educación da a todos la oportunidad de desarrollar su talento. Quien estudia puede mejorar su vida, venga de donde venga.</p>
+        <p class="nota" data-paso="1">Buscaría: cuánto más gana una persona por cada nivel educativo, o casos de movilidad social gracias al estudio.</p>
+      </div>
+      <div>
+        <h3>Postura B · No basta</h3>
+        <p>El acceso y la calidad de la educación dependen de dónde naciste. Así, la educación también puede reproducir la desigualdad.</p>
+        <p class="nota" data-paso="2">Buscaría: diferencias entre zonas urbanas y rurales, o por nivel de ingresos, en acceso, abandono o conexión a internet.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Le pedimos la evidencia a la IA</h2>
+    <div class="dos-columnas">
+      <div>
+        <pre class="prompt">Busca evidencia sobre Ecuador o América Latina para responder si la educación reduce la desigualdad. Dame dos: un estudio o dato oficial que apoye que la educación iguala oportunidades y otro que muestre sus límites. Para cada uno, dime la institución, el título, el año y el enlace. No inventes fuentes: si no encuentras una, dilo.</pre>
+      </div>
+      <div>
+        <h3>Las cuatro preguntas de siempre</h3>
+        <ol>
+          <li data-paso="1"><strong>¿Existe?</strong> Ábrela. Si no aparece, no cuenta.</li>
+          <li data-paso="2"><strong>¿Quién la publica?</strong> Un organismo oficial, una universidad, un medio, una empresa interesada…</li>
+          <li data-paso="3"><strong>¿De qué año es?</strong> ¿Sigue vigente?</li>
+          <li data-paso="4"><strong>¿Dice lo que la IA afirma?</strong> Busca el dato en la fuente.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>La otra sabiduría convencional: el clima</h2>
+    <div class="dos-columnas">
+      <div>
+        <h3>Tiempo y clima</h3>
+        <p><strong>El tiempo</strong> es lo que ves al mirar por la ventana y cambia de una hora a otra. <strong>El clima</strong> son las condiciones meteorológicas medias de una región a lo largo de años y décadas.</p>
+        <p class="nota">«Todo el mundo habla del tiempo, pero nadie hace nada al respecto» (Mark Twain). El tema discute justo esa creencia: que el clima escapa al control humano.</p>
+      </div>
+      <div>
+        <h3>Cómo influimos</h3>
+        <ol>
+          <li data-paso="1">El <strong>efecto invernadero</strong> es natural: mantiene una temperatura adecuada para la vida.</li>
+          <li data-paso="2">Cuando <strong>demasiados gases atrapan demasiado calor</strong>, sube la temperatura. Ese problema es el <mark>calentamiento global</mark>.</li>
+          <li data-paso="3">Los <strong>cambios climáticos</strong> son su consecuencia, como la subida del nivel del mar.</li>
+        </ol>
+        <p class="nota" data-paso="4">El ser humano influye así: intensificando el efecto invernadero con sus emisiones.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Un dato del curso para verificar</h2>
+    <div class="dos-columnas">
+      <table class="tabla">
+        <thead><tr><th>Lo que dice el texto</th><th>Cifra</th></tr></thead>
+        <tbody>
+          <tr><td>Aumento de la temperatura en el último siglo</td><td class="resultado">1,8 °F</td></tr>
+          <tr><td>Periodo en que ocurrió la mayor parte</td><td class="resultado">35 años</td></tr>
+          <tr><td>Máxima variación media en 10.000 años</td><td class="resultado">1,8 °F</td></tr>
+        </tbody>
+      </table>
+      <div>
+        <p>Un aumento de 1,8 °F equivale a <strong>1 °C</strong>: cada grado Celsius son 1,8 grados Fahrenheit.</p>
+        <p data-paso="1"><strong>Pero el texto no dice desde qué año mide ni de dónde sale la cifra.</strong> ¿Cuánto ha subido la temperatura según la Organización Meteorológica Mundial? Se lo preguntamos a la IA y lo verificamos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SALAS 1 · INVESTIGAR ============ -->
+
+  <section class="diapositiva bloque" data-bloque="salas1">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>La consigna queda en esta diapositiva y en el chat.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Ronda 1 · Busca y verifica</h2>
+    <ol>
+      <li><strong>Elige postura:</strong> A (la educación iguala) o B (no basta). No hace falta que sea la que votaste.</li>
+      <li><strong>Pídele a la IA una evidencia</strong> de Ecuador o la región: ingresos según el nivel educativo, acceso a la universidad por nivel de ingresos, internet en zonas rurales y urbanas, abandono escolar en la pandemia…</li>
+      <li><strong>Verifícala</strong> con las cuatro preguntas.</li>
+      <li><strong>Tu ficha:</strong> postura, la evidencia en una frase, fuente y año, y si pasó la verificación.</li>
+    </ol>
+    <div class="consigna-pie">
+      <p class="nota">Una evidencia que no pasó la verificación también sirve: cuéntalo en la plenaria.</p>
+      <button class="temporizador" type="button" data-minutos="12" aria-label="Temporizador de la ronda 1"></button>
+    </div>
+  </section>
+
+  <!-- ============ PLENARIA 1 · EVIDENCIAS ============ -->
+
+  <section class="diapositiva bloque" data-bloque="plenaria1">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>¿Quién comparte su ficha? Avísame por chat.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>¿De dónde sale la idea?</h2>
+    <p>Del <mark>funcionalismo estructural</mark>: la sociedad es un sistema de partes interdependientes que trabajan juntas para producir consenso y estabilidad. La educación aporta a esa estabilidad de dos maneras:</p>
+    <ul class="ideas compactas">
+      <li data-paso="1"><span><strong>Transmite la cultura:</strong> en la escuela se aprenden las normas, los valores y las creencias fundamentales del país.</span></li>
+      <li data-paso="2"><span><strong>Selecciona por talento:</strong> si todos tienen la oportunidad de desarrollar sus habilidades, los «mejores y más brillantes» llegan a las posiciones sociales clave.</span></li>
+    </ul>
+    <p class="nota" data-paso="3">La segunda manera supone que todos parten con las mismas oportunidades. ¿Tu evidencia la apoya o la pone a prueba?</p>
+  </section>
+
+  <section class="diapositiva">
+    <h2>La pandemia como prueba</h2>
+    <div class="dos-columnas">
+      <div>
+        <h3>Lo que pasó</h3>
+        <p>La COVID-19 obligó a las instituciones de todo el mundo a enseñar en línea. Los países desarrollados estaban bien equipados; los países en vías de desarrollo lucharon por lograrlo.</p>
+        <p data-paso="1">Las tecnologías digitales sostuvieron la educación en ese momento crítico.</p>
+      </div>
+      <div data-paso="2">
+        <h3>La pregunta</h3>
+        <p>Recuerda la <mark>brecha digital</mark> de la semana 1: el acceso desigual a la tecnología. Si la educación pasa por la tecnología, ¿iguala o amplía la distancia?</p>
+        <p class="nota">Las dos posturas pueden usar este mismo hecho. Gana la que lo respalde con mejor evidencia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>El aula digital</h2>
+    <div class="dos-columnas">
+      <div>
+        <h3>Características</h3>
+        <ul>
+          <li data-paso="1"><strong>Colaborativa:</strong> wikis, podcasts y blogs.</li>
+          <li data-paso="2"><strong>Interactiva:</strong> el estudiante participa y el docente guía.</li>
+          <li data-paso="3"><strong>Flexible y personalizada.</strong></li>
+          <li data-paso="4"><strong>Accesible:</strong> más canales para llegar a la información.</li>
+          <li data-paso="5">Tácticas: <strong>gamificación</strong>, <strong>aula invertida</strong> (como este curso) y paisajes de aprendizaje.</li>
+        </ul>
+      </div>
+      <div data-paso="6">
+        <h3>La IA en la educación</h3>
+        <p>Promete aprendizaje personalizado y evaluaciones dinámicas. Pero sus innovaciones están en una <strong>fase temprana y experimental</strong>: falta teoría educativa y colaboración con las instituciones.</p>
+        <p class="nota">Características: Haleem, Javaid y Qadri (2022), figura 4 del tema.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SALAS 2 · ARGUMENTAR ============ -->
+
+  <section class="diapositiva bloque" data-bloque="salas2">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>Cerramos la educación y cambiamos de tema: cómo evoluciona el trabajo.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva pregunta">
+    <p class="nota">Cerramos el primer debate: segunda votación en el Forms del chat</p>
+    <p class="enunciado">La sabiduría convencional nos dice que la educación es el gran igualador.</p>
+    <ol class="opciones">
+      <li>De acuerdo</li>
+      <li>En desacuerdo</li>
+    </ol>
+  </section>
+
+  <section class="diapositiva pregunta">
+    <p class="nota">Nueva afirmación: vota en el chat de la reunión. Al final del debate volvemos a votar.</p>
+    <p class="enunciado">La sabiduría convencional nos dice que las máquinas se quedarán con nuestro trabajo.</p>
+    <ol class="opciones">
+      <li>De acuerdo</li>
+      <li>En desacuerdo</li>
+    </ol>
+  </section>
+
+  <section class="diapositiva">
+    <h2>El trabajo ya cambió antes</h2>
+    <div class="dos-columnas">
+      <div>
+        <h3>Un ejemplo del tema</h3>
+        <p>Con las cámaras digitales y los teléfonos móviles cambió la forma de hacer fotos. Los fotógrafos tuvieron que adaptarse para seguir en el negocio, aunque parecía impensable que su profesión pudiera desaparecer.</p>
+      </div>
+      <div>
+        <h3>Dos posturas</h3>
+        <p data-paso="1"><strong>A · Reemplaza:</strong> en mi ámbito, la tecnología elimina más trabajos de los que crea.</p>
+        <p data-paso="2"><strong>B · Transforma:</strong> en mi ámbito, la tecnología cambia las tareas y crea trabajos nuevos, aunque exige adaptarse.</p>
+      </div>
+    </div>
+    <p class="nota" data-paso="3">Hoy ya vimos dos pistas: la Industria 4.0 cambia cómo se produce, y los mundos laborales muestran que el futuro del trabajo no tiene un solo camino.</p>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Ronda 2 · Un ámbito, una evidencia</h2>
+    <ol>
+      <li><strong>Cada sala toma un ámbito:</strong> salud, educación, comercio y atención al cliente, industria, transporte y logística, banca, agricultura, medios y diseño, o software.</li>
+      <li><strong>Cada uno le pide a la IA un estudio, dato o caso</strong> de cómo cambió el trabajo en ese ámbito con la automatización o la IA: qué tareas desaparecieron, cuáles cambiaron, qué trabajos surgieron.</li>
+      <li><strong>Verifícalo</strong> con las cuatro preguntas.</li>
+      <li><strong>Tu argumento:</strong> ¿A o B en tu ámbito? Afirmación, evidencia, razonamiento y qué le respondes al otro lado.</li>
+    </ol>
+    <div class="consigna-pie">
+      <p class="nota">¿Quieres presentar tu ámbito en el debate? Avísame por chat.</p>
+      <button class="temporizador" type="button" data-minutos="12" aria-label="Temporizador de la ronda 2"></button>
+    </div>
+  </section>
+
+  <!-- ============ PLENARIA 2 · DEBATE ============ -->
+
+  <section class="diapositiva bloque" data-bloque="plenaria2">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>Un ámbito por turno: ¿reemplaza o transforma?</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Debate: ¿las máquinas se quedan con el trabajo?</h2>
+    <div class="dos-columnas">
+      <div>
+        <h3>Postura A · Reemplaza</h3>
+        <p>La tecnología elimina más trabajos de los que crea.</p>
+      </div>
+      <div>
+        <h3>Postura B · Transforma</h3>
+        <p>La tecnología cambia las tareas y crea trabajos nuevos, aunque exige adaptarse.</p>
+      </div>
+    </div>
+    <p class="nota" data-paso="1">Se argumenta con lo que encontraste y verificaste, sin consultar la IA en vivo. Fíjate si la respuesta cambia de un ámbito a otro, y en quién gana y quién pierde en cada uno.</p>
+  </section>
+
+  <section class="diapositiva pregunta">
+    <p class="nota">Segunda votación en el chat de la reunión</p>
+    <p class="enunciado">La sabiduría convencional nos dice que las máquinas se quedarán con nuestro trabajo.</p>
+    <ol class="opciones">
+      <li>De acuerdo</li>
+      <li>En desacuerdo</li>
+    </ol>
+  </section>
+
+  <!-- ============ CIERRE ============ -->
+
+  <section class="diapositiva bloque" data-bloque="cierre">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>Clima, Industria 4.0 y el trabajo del futuro: lo que entra el domingo.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>¿Se puede hacer algo contra el clima?</h2>
+    <div class="dos-columnas" style="grid-template-columns: 1.3fr 1fr">
+      <div>
+        <h3>Siete innovaciones del tema</h3>
+        <ol>
+          <li data-paso="1">Capturar y almacenar el CO₂.</li>
+          <li data-paso="2">Algas para las vacas: hasta −80 % de metano.</li>
+          <li data-paso="3">Insectos como alimento.</li>
+          <li data-paso="4">Reparación climática.</li>
+          <li data-paso="5">Trabajo a distancia.</li>
+          <li data-paso="6">Centros de datos en la nube.</li>
+          <li data-paso="7">Eficiencia energética doméstica.</li>
+        </ol>
+      </div>
+      <div data-paso="8">
+        <h3>La más eficaz, según el texto</h3>
+        <p><mark>Reducir el consumo de energía</mark>, sobre todo con hogares más eficientes. Ser eficiente es obtener lo mismo gastando menos energía.</p>
+        <p class="nota">No es lo mismo que generar energía limpia: unos paneles solares producen energía renovable, pero no reducen el consumo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Industria 4.0</h2>
+    <ul class="ideas compactas">
+      <li data-paso="1"><span><strong>Qué es:</strong> una <mark>revolución tecnológica</mark> que cambia la manera en que las organizaciones producen.</span></li>
+      <li data-paso="2"><span><strong>Qué la distingue:</strong> incorpora <mark>tecnologías digitales avanzadas</mark> a la producción: internet de las cosas, análisis de datos, nube, inteligencia artificial y aprendizaje automático.</span></li>
+      <li data-paso="3"><span><strong>Para qué:</strong> mejorar la producción integrando esas tecnologías. Automatiza y optimiza los procesos, da más flexibilidad y permite ajustar <strong>en tiempo real</strong>. La meta son fábricas inteligentes: flexibles, adaptables y eficientes.</span></li>
+      <li data-paso="4"><span><strong>Sistemas ciberfísicos:</strong> unen máquinas físicas y software para <mark>monitorear y controlar los procesos en tiempo real</mark>.</span></li>
+      <li data-paso="5"><span><strong>Colaboración:</strong> la fabricación se distribuye en redes de empresas de distintos sectores y tamaños, no solo de las grandes.</span></li>
+    </ul>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Qué aporta cada tecnología</h2>
+    <table class="tabla">
+      <thead><tr><th>Tecnología</th><th>Qué hace</th><th>Qué aporta</th></tr></thead>
+      <tbody>
+        <tr data-paso="1"><td>Internet de las cosas</td><td>Conecta máquinas y sensores</td><td class="resultado">Pieza clave de la fábrica inteligente</td></tr>
+        <tr data-paso="2"><td>Nube</td><td>Guarda y procesa datos en servidores remotos</td><td class="resultado">Conectividad</td></tr>
+        <tr data-paso="3"><td>IA y aprendizaje automático</td><td>Encuentran patrones en los datos</td><td class="resultado">Aprovechar el volumen de información</td></tr>
+        <tr data-paso="4"><td><em>Edge computing</em></td><td>Procesa los datos cerca de la máquina</td><td class="resultado">Análisis donde se generan los datos</td></tr>
+        <tr data-paso="5"><td>Gemelo digital</td><td>Copia virtual de una máquina o proceso para probar cambios</td><td class="resultado">Productividad</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Cuatro mundos laborales posibles</h2>
+    <table class="tabla">
+      <thead><tr><th>Mundo</th><th>Quién manda</th><th>Qué lo distingue</th></tr></thead>
+      <tbody>
+        <tr data-paso="1"><td><strong>Rojo</strong></td><td>La innovación</td><td>Empresas y especialistas compiten por dar a cada cliente lo que quiere: <mark>productos personalizados</mark>.</td></tr>
+        <tr data-paso="2"><td><strong>Azul</strong></td><td>Las grandes corporaciones</td><td>Crecer en tamaño y ganar la lucha por el talento.</td></tr>
+        <tr data-paso="3"><td><strong>Verde</strong></td><td>La conciencia social</td><td>Las empresas se rigen por una <mark>agenda ética y ecológica</mark>.</td></tr>
+        <tr data-paso="4"><td><strong>Amarillo</strong></td><td>Las personas</td><td>Se busca un trabajo con <mark>significado y relevancia</mark>, al servicio de la comunidad.</td></tr>
+      </tbody>
+    </table>
+    <p class="nota" data-paso="5">Figura 3 del tema. Son escenarios, no predicciones; tampoco lo es la lista de Duggal (2023) sobre el trabajo en 2030. ¿Quién gana y quién pierde en cada mundo?</p>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Antes de irnos</h2>
+    <ul class="cierre-lista">
+      <li><span class="que">Este domingo, 8 nov</span><span>Aprendizaje Práctico de la semana 2.</span></li>
+      <li><span class="que">Entrega en curso</span><span>Aprendizaje Autónomo 1, el domingo 15 de noviembre. Cubre las semanas 1 y 2. Revisa la <a href="../ver.html?f=entregas/aa1.md">guía</a>.</span></li>
+      <li><span class="que">Si ves la grabación</span><span>Elige un ámbito laboral. Busca con IA una evidencia de cómo la tecnología cambió el trabajo ahí y verifícala con las cuatro preguntas. Luego argumenta: ¿reemplaza o transforma?</span></li>
+      <li><span class="que">Próxima semana</span><span>Computadoras e inteligencia artificial (miércoles 11 de noviembre). Antes, usa el <a href="../ver.html?f=semana-03/tutor.md">tutor de la semana 3</a> y envía tu ticket hasta las 12:00.</span></li>
+    </ul>
+  </section>
+
+</main>
+<script src="../assets/secuencia.js"></script>
+<script src="../assets/presentacion.js"></script>
+</body>
+</html>
