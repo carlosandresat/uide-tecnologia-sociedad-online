@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tecnología y Sociedad · Semana 3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;600&family=Overpass:wght@400;600;700;800;900&display=swap">
+  <link rel="stylesheet" href="../assets/presentacion.css">
+  <script src="../assets/tema.js"></script>
+  <style>
+    .video { width: 100%; max-width: calc(var(--u) * 96); aspect-ratio: 16 / 9; max-height: calc(var(--u) * 50); border: 0; display: block; background: #000; }
+    .mapa text { font-family: var(--f-texto); }
+    .historia-lista h3 { margin-top: 1em; }
+    .tabla.compacta { font-size: calc(var(--u) * 2.75); }
+    .tabla.compacta td { padding-top: calc(var(--u) * 0.55); padding-bottom: calc(var(--u) * 0.55); }
+  </style>
+</head>
+<body data-curso="tecnologia-sociedad" data-formato="debate">
+<div class="barra-lectura">
+  <a href="../index.html">Volver al curso</a>
+  <button type="button" class="boton" data-alternar-tema>Modo oscuro</button>
+</div>
+<main class="escenario">
+
+  <section class="diapositiva portada">
+    <div class="portada-panel">
+      <span>Semana</span>
+      <span class="semana-numero">3</span>
+      <span>de 7</span>
+    </div>
+    <div class="portada-texto">
+      <p class="curso">Tecnología y Sociedad</p>
+      <h1>Computadoras e inteligencia artificial</h1>
+      <p class="objetivo">La IA no es solo ChatGPT, Gemini o Claude. Ubicar esos chats en el mapa de la IA, reconocer cómo aprenden las máquinas y decidir si «piensan» o solo predicen.</p>
+      <p class="fecha">Miércoles 11 de noviembre · 19:00</p>
+      <div class="recorrido-completo"></div>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Plan de hoy</h2>
+    <ol class="plan">
+      <li data-bloque="puente">Un video de 7 minutos con el mapa de la IA y la pista del Aprendizaje Práctico.</li>
+      <li data-bloque="caso">¿Cuánta IA usaste hoy? Le preguntamos a un chat qué es.</li>
+      <li data-bloque="salas1">Cada uno investiga una IA que no sea un chat. No se graba.</li>
+      <li data-bloque="plenaria1">Tres maneras de aprender y las disciplinas de la IA.</li>
+      <li data-bloque="salas2">¿La IA es inteligente o solo predice? No se graba.</li>
+      <li data-bloque="plenaria2">Debate con voluntarios y segunda votación.</li>
+      <li data-bloque="cierre">80 años de historia de la IA y el taller de la semana 4.</li>
+    </ol>
+  </section>
+
+  <!-- ============ PUENTE ============ -->
+
+  <section class="diapositiva bloque" data-bloque="puente">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>Empezamos con el panorama completo: un mapa de la IA en 7 minutos.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Para el Aprendizaje Práctico de este domingo</h2>
+    <p class="pista">Esta semana el cuestionario pide mucho de la historia de la IA: quién hizo qué y en qué año. Repasa la tabla de hitos década por década; al final de la sesión la recorremos. También entran las disciplinas relacionadas con la IA y los tres tipos de aprendizaje automático.</p>
+    <p class="nota">Una pista, no la pregunta. El cuestionario vence el domingo 15 de noviembre, el mismo día que el Aprendizaje Autónomo 1.</p>
+  </section>
+
+  <section class="diapositiva">
+    <h2>IA, machine learning y deep learning: un mapa</h2>
+    <iframe class="video" src="https://www.youtube-nocookie.com/embed/KytW151dpqU" title="¿Qué es el Machine Learning? ¿Y Deep Learning? Un mapa conceptual (DotCSV)" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen loading="lazy"></iframe>
+    <p class="nota">DotCSV, «¿Qué es el Machine Learning? ¿Y Deep Learning? Un mapa conceptual» (7 min). <a href="https://www.youtube.com/watch?v=KytW151dpqU">Ver en YouTube</a></p>
+  </section>
+
+  <section class="diapositiva">
+    <h2>¿Dónde está ChatGPT en el mapa?</h2>
+    <figure class="mapa">
+      <svg viewBox="0 0 1000 470" role="img" aria-label="Cajas anidadas: la inteligencia artificial contiene al aprendizaje automático, que contiene al aprendizaje profundo, que contiene a los modelos de lenguaje como ChatGPT, Gemini y Claude." style="width:100%;height:auto;max-height:calc(var(--u) * 60);display:block">
+        <rect x="2" y="2" width="996" height="466" rx="14" style="fill:none;stroke:var(--acento);stroke-width:4"/>
+        <text x="24" y="40" style="fill:var(--acento);font-size:26px;font-weight:900">Inteligencia artificial</text>
+        <text x="24" y="70" style="fill:var(--tinta);font-size:18px">Máquinas que hacen tareas que normalmente requieren inteligencia humana. También incluye</text>
+        <text x="24" y="94" style="fill:var(--tinta);font-size:18px">sistemas que no aprenden, como los sistemas expertos: reglas escritas por personas.</text>
+        <g data-paso="1">
+          <rect x="22" y="112" width="956" height="338" rx="12" style="fill:var(--superficie);stroke:var(--caja-diagrama);stroke-width:3"/>
+          <text x="44" y="148" style="fill:var(--tinta);font-size:23px;font-weight:900">Aprendizaje automático (machine learning)</text>
+          <text x="44" y="176" style="fill:var(--tinta);font-size:18px">Aprende de los datos sin que le programen las reglas: supervisado, no supervisado, por refuerzo.</text>
+        </g>
+        <g data-paso="2">
+          <rect x="42" y="196" width="916" height="236" rx="10" style="fill:var(--caja-diagrama)"/>
+          <text x="64" y="232" style="fill:var(--texto-caja-diagrama);font-size:23px;font-weight:900">Aprendizaje profundo (deep learning)</text>
+          <text x="64" y="260" style="fill:var(--texto-caja-diagrama);font-size:18px">Redes neuronales artificiales de muchas capas.</text>
+          <text x="560" y="318" style="fill:var(--texto-caja-diagrama);font-size:18px">También aquí: reconocer rostros,</text>
+          <text x="560" y="344" style="fill:var(--texto-caja-diagrama);font-size:18px">reconocer la voz, AlphaGo…</text>
+        </g>
+        <g data-paso="3">
+          <rect x="62" y="282" width="470" height="132" rx="8" style="fill:var(--guinda);stroke:var(--dorado);stroke-width:4"/>
+          <text x="84" y="320" style="fill:#FFFFFF;font-size:22px;font-weight:900">Modelos de lenguaje (LLM)</text>
+          <text x="84" y="352" style="fill:#FFFFFF;font-size:18px">ChatGPT · Gemini · Claude</text>
+          <text x="84" y="382" style="fill:#FFFFFF;font-size:17px">Predicen la siguiente palabra a partir</text>
+          <text x="84" y="404" style="fill:#FFFFFF;font-size:17px">de enormes cantidades de texto.</text>
+        </g>
+      </svg>
+    </figure>
+  </section>
+
+  <!-- ============ CASO EN VIVO ============ -->
+
+  <section class="diapositiva bloque" data-bloque="caso">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>La IA no es solo ChatGPT. ¿Cuánta usaste hoy sin darte cuenta?</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>¿Cuántas de estas usaste hoy?</h2>
+    <table class="tabla">
+      <thead><tr><th>Lo que usaste</th><th>Qué hace</th><th>Qué IA hay detrás</th></tr></thead>
+      <tbody>
+        <tr><td>Filtro de spam</td><td>Separa los correos en spam y no spam</td><td data-paso="1" class="resultado">Supervisado: clasificación</td></tr>
+        <tr><td>Tiempo de llegada en el mapa</td><td>Predice cuántos minutos tardarás</td><td data-paso="2" class="resultado">Supervisado: regresión</td></tr>
+        <tr><td>Recomendaciones de videos</td><td>Agrupa a usuarios con gustos parecidos</td><td data-paso="3" class="resultado">No supervisado: agrupación</td></tr>
+        <tr><td>Desbloqueo con la cara</td><td>Reconoce tu rostro</td><td data-paso="4" class="resultado">Aprendizaje profundo: visión</td></tr>
+        <tr><td>Teclado predictivo</td><td>Sugiere la siguiente palabra</td><td data-paso="5" class="resultado">Modelo de lenguaje</td></tr>
+        <tr><td>ChatGPT</td><td>Conversa contigo</td><td data-paso="6" class="resultado">Modelo de lenguaje (LLM)</td></tr>
+      </tbody>
+    </table>
+    <p class="nota" data-paso="7">Respóndelo en el chat antes de ver la columna de la derecha. Solo una de las seis es un chat.</p>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Le preguntamos a un chat qué es</h2>
+    <div class="dos-columnas">
+      <div>
+        <pre class="prompt">Explícame en pocas líneas qué tipo de IA eres y qué haces cuando te escribo. Después nombra cuatro sistemas de IA que no sean chats. Para cada uno, dime qué tarea hace, de qué datos aprende y qué tipo de aprendizaje usa: supervisado, no supervisado o por refuerzo.</pre>
+      </div>
+      <div>
+        <h3>Para interpretar la respuesta</h3>
+        <ol>
+          <li data-paso="1">¿Dice que <strong>predice</strong> texto o que <strong>piensa</strong>? Guárdalo para el debate.</li>
+          <li data-paso="2">¿Dónde queda cada sistema en el mapa?</li>
+          <li data-paso="3">¿Clasificó bien el tipo de aprendizaje? Revísalo con las tres preguntas de la siguiente diapositiva.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>¿Cómo aprende? Tres preguntas</h2>
+    <ul class="ideas compactas">
+      <li data-paso="1"><span><strong>¿Los datos traen la respuesta esperada (una etiqueta)?</strong> Es <mark>aprendizaje supervisado</mark>. Si predice una categoría, es <strong>clasificación</strong>; si predice un número, es <strong>regresión</strong>.</span></li>
+      <li data-paso="2"><span><strong>¿No hay etiquetas, pero un agente actúa en un entorno y recibe premios o castigos?</strong> Es <mark>aprendizaje por refuerzo</mark>.</span></li>
+      <li data-paso="3"><span><strong>¿No hay etiquetas ni premios, y busca la estructura de los datos?</strong> Es <mark>aprendizaje no supervisado</mark>: reconoce patrones, agrupa o reduce dimensiones.</span></li>
+    </ul>
+    <p class="nota" data-paso="4">Si vienes de programar: en Python o Java tú escribes las reglas. Con aprendizaje automático, la máquina las aprende de los datos.</p>
+  </section>
+
+  <!-- ============ SALAS 1 · INVESTIGAR ============ -->
+
+  <section class="diapositiva bloque" data-bloque="salas1">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>La consigna queda en esta diapositiva y en el chat.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Ronda 1 · Una IA que no es un chat</h2>
+    <ol>
+      <li><strong>Elige un sistema de IA</strong> que uses o que exista en tu carrera, que no sea un chat: detección de fraude, diagnóstico por imágenes, antivirus, cámaras de tránsito, recomendaciones, un robot…</li>
+      <li><strong>Investígalo con IA:</strong> qué tarea hace, de qué datos aprende y qué tipo de aprendizaje usa (aplica las tres preguntas).</li>
+      <li><strong>Verifica una fuente</strong> con las cuatro preguntas de siempre: ¿existe?, ¿quién la publica?, ¿de qué año es?, ¿dice lo que la IA afirma?</li>
+      <li><strong>Tu ficha:</strong> sistema, tarea, datos, tipo de aprendizaje, lugar en el mapa y fuente.</li>
+    </ol>
+    <div class="consigna-pie">
+      <p class="nota">Si la IA clasificó mal el tipo de aprendizaje y lo detectaste, cuéntalo en la plenaria.</p>
+      <button class="temporizador" type="button" data-minutos="12" aria-label="Temporizador de la ronda 1"></button>
+    </div>
+  </section>
+
+  <!-- ============ PLENARIA 1 · EVIDENCIAS ============ -->
+
+  <section class="diapositiva bloque" data-bloque="plenaria1">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>¿Quién comparte su ficha? Avísame por chat.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Tres maneras de aprender</h2>
+    <table class="tabla compacta">
+      <thead><tr><th>Tipo</th><th>Con qué datos</th><th>Cómo aprende</th><th>Para qué</th></tr></thead>
+      <tbody>
+        <tr data-paso="1"><td><strong>Supervisado</strong></td><td>Pares de entrada y salida: cada ejemplo trae su etiqueta, puesta por una persona</td><td>Predice, compara con la etiqueta y corrige el error</td><td>Clasificar (¿fraude o no?) y hacer regresión (precio de una vivienda)</td></tr>
+        <tr data-paso="2"><td><strong>No supervisado</strong></td><td>Datos sin etiquetar: no hay respuestas correctas</td><td>Busca similitudes y la estructura de los datos</td><td>Reconocer patrones, agrupar en clústeres y reducir la dimensionalidad</td></tr>
+        <tr data-paso="3"><td><strong>Por refuerzo</strong></td><td>El estado del entorno</td><td>Un agente actúa y recibe una recompensa positiva o negativa: ensayo y error</td><td>Juegos, robots, conducción</td></tr>
+      </tbody>
+    </table>
+    <p class="nota" data-paso="4">El supervisado es el más usado. El no supervisado agrupa clientes parecidos sin que nadie le diga cuántos tipos hay.</p>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Disciplinas relacionadas con la IA</h2>
+    <table class="tabla compacta">
+      <tbody>
+        <tr><td><strong>Computer science</strong></td><td>Estudia los ordenadores y su funcionamiento: hardware y software, sus principios, diseños y usos para procesar información.</td></tr>
+        <tr><td><strong>Data science</strong></td><td>Usa grandes cantidades de datos para tomar decisiones: extraer, analizar, visualizar y presentar.</td></tr>
+        <tr><td><strong>Cognitive computing</strong></td><td>Simula el pensamiento humano en situaciones complejas, con respuestas ambiguas e inciertas.</td></tr>
+        <tr><td><strong>Evolutionary computation</strong></td><td>Algoritmos de optimización inspirados en la evolución biológica.</td></tr>
+        <tr><td><strong>Robotics</strong></td><td>Diseña, construye y pone en funcionamiento robots para tareas humanas o peligrosas.</td></tr>
+        <tr><td><strong>Machine learning</strong></td><td>Algoritmos que aprenden de los datos sin estar programados explícitamente.</td></tr>
+        <tr><td><strong>Deep learning</strong></td><td>Redes neuronales artificiales que imitan la estructura del cerebro.</td></tr>
+        <tr><td><strong>Natural language processing</strong></td><td>Comprender, generar y responder texto y voz en lenguaje natural.</td></tr>
+        <tr><td><strong>Computer vision</strong></td><td>Obtener información útil de imágenes y videos.</td></tr>
+        <tr><td><strong>Expert systems</strong></td><td>Simulan el juicio de un experto en un campo concreto.</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ============ SALAS 2 · ARGUMENTAR ============ -->
+
+  <section class="diapositiva bloque" data-bloque="salas2">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>Votamos y abrimos la segunda ronda: ¿la IA piensa?</p>
+    </div>
+  </section>
+
+  <section class="diapositiva pregunta">
+    <p class="nota">Vota en el Forms del chat de la reunión. Al final del debate volvemos a votar.</p>
+    <p class="enunciado">¿La inteligencia artificial es inteligente o solo predice?</p>
+    <ol class="opciones">
+      <li>Es inteligente</li>
+      <li>Solo predice</li>
+    </ol>
+  </section>
+
+  <section class="diapositiva">
+    <h2>¿Pueden pensar las máquinas?</h2>
+    <ul class="ideas compactas">
+      <li data-paso="1"><span><strong>Turing (1950)</strong> se hizo esa pregunta y propuso el <mark>Test de Turing</mark>: un método para determinar si una máquina es inteligente. Si al conversar no la distingues de una persona, la pasa.</span></li>
+      <li data-paso="2"><span><strong>El texto del curso</strong> responde distinto: la IA no es inteligencia, sino un <mark>mecanismo de predicción</mark> que usa grandes cantidades de datos para predecir y ejecutar los resultados deseados (Feingold, 2023).</span></li>
+      <li data-paso="3"><span>En medio está la <mark>computación cognitiva</mark>: modelos informáticos que simulan el pensamiento humano en situaciones complejas, con respuestas ambiguas e inciertas. Simular, ¿es pensar?</span></li>
+    </ul>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Ronda 2 · Argumenta</h2>
+    <ol>
+      <li><strong>Elige postura:</strong> A (es inteligente) o B (solo predice).</li>
+      <li><strong>Evidencia:</strong> tu ficha de la ronda 1, una fuente verificada o una prueba propia: hazle a un chat una pregunta con trampa y anota qué responde.</li>
+      <li><strong>Razonamiento:</strong> ¿por qué tu evidencia muestra inteligencia o predicción?</li>
+      <li><strong>Respuesta:</strong> ¿qué le contestas a la mejor evidencia del otro lado?</li>
+    </ol>
+    <div class="consigna-pie">
+      <p class="nota">¿Quieres presentar tu argumento en el debate? Avísame por chat.</p>
+      <button class="temporizador" type="button" data-minutos="12" aria-label="Temporizador de la ronda 2"></button>
+    </div>
+  </section>
+
+  <!-- ============ PLENARIA 2 · DEBATE ============ -->
+
+  <section class="diapositiva bloque" data-bloque="plenaria2">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Debate: ¿inteligente o predicción?</h2>
+    <div class="dos-columnas">
+      <div>
+        <h3>Postura A · Es inteligente</h3>
+        <p>Conversa, resuelve problemas y aprende de la experiencia. Si no la distinguimos de una persona, ¿qué le falta?</p>
+      </div>
+      <div>
+        <h3>Postura B · Solo predice</h3>
+        <p>Calcula la respuesta más probable a partir de sus datos. No entiende lo que dice ni sabe cuándo se equivoca.</p>
+      </div>
+    </div>
+    <p class="nota" data-paso="1">Se argumenta con lo que encontraste y verificaste, sin consultar la IA en vivo. Piensa también en los sistemas que no son chats: ¿un filtro de spam es inteligente?</p>
+  </section>
+
+  <section class="diapositiva pregunta">
+    <p class="nota">Segunda votación en el Forms del chat</p>
+    <p class="enunciado">¿La inteligencia artificial es inteligente o solo predice?</p>
+    <ol class="opciones">
+      <li>Es inteligente</li>
+      <li>Solo predice</li>
+    </ol>
+  </section>
+
+  <!-- ============ CIERRE ============ -->
+
+  <section class="diapositiva bloque" data-bloque="cierre">
+    <span class="numero"></span>
+    <div class="bloque-texto">
+      <h2></h2>
+      <p class="minutos"></p>
+      <p>ChatGPT llegó después de 80 años de historia.</p>
+    </div>
+  </section>
+
+  <section class="diapositiva">
+    <h2>80 años de inteligencia artificial</h2>
+    <figure id="anim-historia">
+      <figcaption class="solo-lector">Línea del tiempo de la IA de 1940 a 2025 en seis etapas: los inicios, los laboratorios y primeros sistemas expertos, el primer invierno, los sistemas expertos y la Quinta Generación con el segundo invierno, la vuelta del aprendizaje y la era de los modelos de lenguaje. <span data-paso="1"></span><span data-paso="2"></span><span data-paso="3"></span><span data-paso="4"></span><span data-paso="5"></span><span data-paso="6"></span></figcaption>
+    </figure>
+  </section>
+
+  <section class="diapositiva">
+    <h2>Antes de irnos</h2>
+    <ul class="cierre-lista">
+      <li><span class="que">Este domingo, 15 nov</span><span>Aprendizaje Práctico de la semana 3 y <strong>Aprendizaje Autónomo 1</strong> (<a href="../ver.html?f=entregas/aa1.md">guía</a>). La IA que viste hoy sirve para sus preguntas 9 y 10.</span></li>
+      <li><span class="que">Semana 4: taller</span><span>Haremos un mini taller de IA en Google Colab. Trae una computadora (no el celular) y tu cuenta de Google.</span></li>
+      <li><span class="que">Si ves la grabación</span><span>Clasifica tres IA que usaste hoy y no sean chats con las tres preguntas. Luego responde en un párrafo: ¿la IA es inteligente o solo predice?</span></li>
+      <li><span class="que">Próxima semana</span><span>Más allá de la IA (miércoles 18 de noviembre). Antes, usa el <a href="../ver.html?f=semana-04/tutor.md">tutor de la semana 4</a>.</span></li>
+    </ul>
+  </section>
+
+</main>
+<script src="../assets/secuencia.js"></script>
+<script src="../assets/presentacion.js"></script>
+<script src="anim-historia.js"></script>
+</body>
+</html>
